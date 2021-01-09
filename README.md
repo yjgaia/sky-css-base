@@ -1,3 +1,3 @@
-# sky-css-reset
+# sky-css-base
 ## License
 MIT
