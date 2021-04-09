@@ -178,12 +178,3 @@ input {
 [contenteditable] {
     -webkit-tap-highlight-color: transparent;
 }
-
-.float-wrapper:after {
-    content   : " ";
-    display   : block;
-    font-size : 0;
-    height    : 0;
-    clear     : both;
-    visibility: hidden;
-}
