@@ -179,11 +179,18 @@ input {
     -webkit-tap-highlight-color: transparent;
 }
 
-.float-wrapper:after {
-    content   : " ";
-    display   : block;
-    font-size : 0;
-    height    : 0;
-    clear     : both;
-    visibility: hidden;
+@pc              :~"only screen and (min-width: 960px)";
+@tablet-and-phone: ~"only screen and (max-width: 959px)";
+@tablet          :~"only screen and (min-width: 720px) and (max-width: 959px)";
+@phone           :~"only screen and (max-width: 719px)";
+
+.float-wrapper {
+    &:after {
+        content   : " ";
+        display   : block;
+        font-size : 0;
+        height    : 0;
+        clear     : both;
+        visibility: hidden;
+    }
 }
